@@ -7,8 +7,8 @@ export default interface Fighter {
   energy?: Energy;
 
   attack(enemy: Fighter): void;
-  special(enemy: Fighter): void;
+  special?(enemy: Fighter): void;
   levelUp(): void;
-  receiveDamage(attackPoints: number): void;
+  receiveDamage(attackPoints: number): number;
 
 }
